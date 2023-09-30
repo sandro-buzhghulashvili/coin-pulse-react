@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #03045e;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #48cae4;
+  border-radius: 20px;
+  border: 1px solid white;
+}

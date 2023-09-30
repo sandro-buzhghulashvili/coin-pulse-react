@@ -1,0 +1,27 @@
+.loading {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    width: 20px;
+    height: 20px;
+    background-color: #48cae4;
+    margin: 20px;
+    animation: loading .3s ease infinite alternate-reverse;
+}
+.loader:nth-of-type(2) {
+    animation-delay: .1s;
+}
+.loader:nth-of-type(3) {
+    animation-delay: .2s;
+}
+
+@keyframes loading {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(20px);
+    }
+}

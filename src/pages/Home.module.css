@@ -1,0 +1,128 @@
+.home {
+    margin-top: 250px;
+}
+.home .hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.home .hero h1 {
+    margin: auto;
+    width: 75%;
+    font-size: 105px;
+    color: #f3f2f4;
+}
+.home .hero h1 span {
+    color: #48cae4;
+}
+.home .hero img {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    width: 71px;
+    height: 71px;
+    animation: coinAnimation .5s ease infinite alternate-reverse;
+}
+.home .hero img:nth-of-type(1) {
+    left: 60px;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 120px;
+}
+.data .currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f3f2f4;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.data .currency div {
+    margin-bottom: 10px;
+}
+
+.decrement {
+    color: red !important;
+}
+.increment {
+    color: green !important;
+}
+
+.data .currency div span {
+    margin: 0 5px;
+}
+
+.data .currency img {
+    width: 90px;
+    display: block;
+    margin-bottom: 20px;
+    height: 90px;
+}
+
+.link {
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin: auto;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color: #0f051d;
+    box-shadow: 0 10px 5px 0 rgba(0,0,0,.16);
+    color: #f3f2f4;
+    margin-bottom: 50px;
+    transition: .5s;
+    font-weight: 700;
+}
+.link:hover {
+    color: #48cae4;
+}
+
+@keyframes coinAnimation {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(-20px);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .home .hero h1 {
+        width: 70%;
+        margin: auto;
+        font-size: 90px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .home .hero h1 {
+        font-size: 75px;
+    }
+}
+@media screen and (max-width:800px) {
+    .home .hero img {
+        display: none;
+    }
+    .home .hero h1 {
+        width: 85%;
+    }
+    .link {
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px) {
+    .home .hero h1 {
+        font-size: 50px;
+    }
+    .link {
+        width: 70%;
+    }
+}

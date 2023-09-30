@@ -1,0 +1,117 @@
+.main {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f3f2f4;
+    font-size: 25px;
+}
+.main h1 {
+    margin-bottom: 30px;
+}
+.stats {
+    max-width: 90%;
+    overflow-x: auto;
+    margin-bottom: 80px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(25deg,#1b1d92,#48cae4);
+    border-radius: 8px 8px 0 0;
+    color: #f3f2f4;
+    padding: 15px;
+}
+.header p {
+    margin: 0 60px;
+}
+.header p:nth-of-type(1) {
+    margin-left: 10px;
+    margin-right: 150px;
+}
+.stats ul li {
+    display: flex;
+    align-items: center;
+    padding: 25px 5px;
+    border-bottom: 1px solid #f3f2f4;
+}
+.stats ul a {
+    color: #f3f2f4;
+    text-decoration: none;
+    transition: .2s;
+}
+.stats ul li:hover {
+    background-color: #1c1ea853;
+}
+.stats ul li div {
+    display: flex;
+    margin-right: 120px;
+    align-items: center;
+}
+.stats ul li div img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.stats ul li p {
+    margin-right: 100px;
+}
+.stats ul li p:nth-of-type(2),
+.stats ul li p:nth-of-type(3) {
+    margin-right: 100px;
+}
+.stats ul li p:nth-of-type(3) {
+    margin-left: 70px;
+}
+
+.decrement {
+    color: red !important;
+}
+.increment {
+    color: green !important;
+}
+.pagination {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pagination button {
+    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    border: none;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+
+.pagination button:hover,
+.pagination button.active
+{
+    background-color: #48cae4;
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        width: fit-content;
+    }
+    .header p:nth-of-type(4) {
+        margin-right: 100px;
+    }
+    .stats ul {
+        width: fit-content;
+    }
+    .stats ul li p:nth-of-type(3) {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .stats ul li div {
+        margin-right:70px;
+    }
+}
