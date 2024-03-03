@@ -1,22 +1,21 @@
-import React from "react";
-import { Outlet, useNavigation } from "react-router-dom";
+import React from 'react';
+import { Outlet, useNavigation } from 'react-router-dom';
 
-import MainNavbar from "../components/MainNavbar";
-import LoadingPage from "../components/LoadingPage";
-import Footer from "../components/Footer";
+import classes from './Layout.module.css';
+
+import MainNavbar from '../components/MainNavbar';
+import LoadingPage from '../components/LoadingPage';
+import Footer from '../components/Footer';
 
 const LayoutPage = () => {
-    const navigation = useNavigation()
-    return (
-        <>
-        <MainNavbar/>
-        {navigation.state === "loading" ?
-        <LoadingPage /> :
-        <Outlet />
-        }
-        <Footer />
-        </>
-    )
-}
+  const navigation = useNavigation();
+  return (
+    <div className={classes.layout}>
+      <MainNavbar />
+      {navigation.state === 'loading' ? <LoadingPage /> : <Outlet />}
+      <Footer />
+    </div>
+  );
+};
 
-export default LayoutPage
+export default LayoutPage;

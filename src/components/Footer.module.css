@@ -1,37 +1,39 @@
 .footer {
-    width: 100%;
-    background-color: #0f051d;
-    background-image: url(/src/assets/footer-bg.png);
-    background-position: 50%;
-    background-size: cover;
-    height: 300px;
+  width: 100%;
+  background-color: #0f051d;
+  background-image: url(/src/assets/footer-bg.png);
+  background-position: 50%;
+  background-size: cover;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
 }
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #f3f2f4;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f3f2f4;
 }
 .icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .icons .icon {
-    font-size: 2.8rem;
-    margin: 20px;
-    margin-bottom: 40px;
-    cursor: pointer;
-    transition: .5s;
+  font-size: 2.8rem;
+  margin: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .icons .icon:hover,
 .text span:hover {
-    color: #48cae4;
+  color: #48cae4;
 }
-.text span{
-    font-size: 18px;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: .5s;
+.text span {
+  font-size: 18px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
